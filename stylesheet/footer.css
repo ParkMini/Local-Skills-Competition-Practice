@@ -1,0 +1,14 @@
+#wrap {
+    height: auto;
+    min-height: calc(100% - 71px);
+    position: relative;
+}
+
+footer {
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    transform: translateY(-100%);
+}
