@@ -24,15 +24,15 @@ header ul li:hover {
     color: green;
 }
 
-#left li {
+#headerLeft li {
     padding: 22px 16px;
 }
 
-#right li {
+#headerRight li {
     padding: 22px 10px;
 }
 
-#right {
+#headerRight {
     margin-left: auto; /* margin-left: auto를 주게 되면 오른쪽으로 붙게 됨 */
     margin-right: 10px;
 }
