@@ -37,10 +37,11 @@ header ul li:hover {
     margin-right: 10px;
 }
 
-#dropdownChild {
+.dropdownChild {
     display: none;
 }
 
-#dropdownParent:hover #dropdownChild {
-    display: block;
+.dropdownParent:hover .dropdownChild {
+    display: flex;
+    flex-direction: column;
 }
