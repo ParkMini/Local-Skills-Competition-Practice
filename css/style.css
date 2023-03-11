@@ -1,0 +1,74 @@
+body {
+    overflow-y: hidden;
+}
+
+#wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+button {
+    margin: 0 auto;
+    width: 300px;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: lightgray;
+}
+
+img {
+    width: 160px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#leftTime {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 32px;
+}
+
+#findCardCount {
+    text-align: center;
+    font-size: 24px;
+    margin-left: 450px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    padding: 10px;
+}
+
+.cardBack, .card img {
+    border-radius: 15px;
+}
+
+.card-text {
+    width: 160px;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 40%);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 28px;
+    padding: 42px 0;
+}
+
+.cardBack {
+    width: 160px;
+    height: 160px;
+    background-color: gray;
+}
