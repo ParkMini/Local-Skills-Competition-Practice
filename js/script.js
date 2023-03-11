@@ -2,9 +2,34 @@
 const btnElem = document.querySelector("button");
 const timerElem = document.querySelector("#leftTime");
 const findCardCountElem = document.querySelector("#findCardCount");
+const answerLocalAnswer = [
+  "",
+  "거제시",
+  "거창군",
+  "고성군",
+  "김해시",
+  "남해군",
+  "밀양시",
+  "사천시",
+  "산청군",
+  "양산시",
+  "의령군",
+  "진주시",
+  "창년군",
+  "창원시",
+  "통영시",
+  "하동군",
+  "함안군",
+  "함양군",
+  "합천군",
+];
 
 // 카드 상태
 let cardArr = [];
+
+// 첫번째, 두번째 클릭 카드 저장
+let click1 = null;
+let click2 = null;
 
 // 게임 설정
 function setup() {
@@ -39,7 +64,7 @@ function setup() {
 function startGame() {
   // 모든 카드 숨기기
   hideCards();
-  
+
   // 다시하기 버튼 설정
   setupStartGameButton();
 
@@ -65,6 +90,22 @@ function clicked(obj) {
   const id = obj.id;
   obj = document.querySelector(`#${id}`);
   obj.className = `${obj.classList[0]} ${obj.classList[1]}`;
+  if (!click1) {
+    click1 = obj.classList[1];
+  } else {
+    checkCards(click1, obj.classList[1]);
+  } 
+}
+
+function checkCards(c1, c2) {
+  if (c1 == c2) {
+    console.log("true")
+    click1 = null;
+  } else {
+    document.querySelector(`.${c1}`).classList.add("notShow")
+    document.querySelector(`.${c2}`).classList.add("notShow")
+    click1 = null;
+  }
 }
 
 // 랜덤 숫자 배열 생성 함수
