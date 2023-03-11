@@ -17,11 +17,8 @@ function setup() {
   document.querySelector("#cards3").innerHTML = "";
   document.querySelector("#cards4").innerHTML = "";
 
-  // 랜덤으로 16개의 배열 생성
-  let answerArr = getRandomAnswerArr();
-
-  // 카드 배열 생성
-  cardArr = getCardArr(answerArr);
+  // 랜덤으로 16개의 카드 배열 생성
+  getCardArr(getRandomAnswerArr());
 
   // 시작 5초 타이머
   let leftTime = 5;
@@ -90,7 +87,6 @@ function getRandomAnswerArr() {
 
 // 카드 배열 만들기 함수
 function getCardArr(answerArr) {
-  let cardArr = [];
   let count = 0;
 
   for (let i = 1; i <= 4; i++) {
@@ -101,7 +97,6 @@ function getCardArr(answerArr) {
       count++;
     }
   }
-  return cardArr;
 }
 
 // 카드 숨기기 함수
