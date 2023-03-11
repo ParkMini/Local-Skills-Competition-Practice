@@ -1,0 +1,89 @@
+body {
+    overflow-y: hidden;
+}
+
+#wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+button {
+    margin: 0 auto;
+    width: 300px;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: lightgray;
+}
+
+img {
+    width: 160px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#leftTime {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 32px;
+}
+
+#findCardCount {
+    text-align: center;
+    font-size: 24px;
+    margin-left: 450px;
+}
+
+.card1 {background: url("../assets/특산품/거제시_유자.jpg");}
+.card2 {background: url("../assets/특산품/거창군_사과.jpg");}
+.card3 {background: url("../assets/특산품/고성군_방울토마토.jpg");}
+.card4 {background: url("../assets/특산품/김해시_단감.jpg");}
+.card5 {background: url("../assets/특산품/남해군_마늘.jpg");}
+.card6 {background: url("../assets/특산품/밀양시_대추.jpg");}
+.card7 {background: url("../assets/특산품/사천시_멸치.jpg");}
+.card8 {background: url("../assets/특산품/산청군_약초.jpg");}
+.card9 {background: url("../assets/특산품/양산시_매실.jpg");}
+.card10 {background: url("../assets/특산품/의령군_수박.jpg");}
+.card11 {background: url("../assets/특산품/진주시_고추.jpg");}
+.card12 {background: url("../assets/특산품/창녕군_양파.jpg");}
+.card13 {background: url("../assets/특산품/창원시_풋고추.jpg");}
+.card14 {background: url("../assets/특산품/통영시_굴.jpg");}
+.card15 {background: url("../assets/특산품/하동군_녹차.jpg");}
+.card16 {background: url("../assets/특산품/함안군_곶감.jpg");}
+.card17 {background: url("../assets/특산품/함양군_밤.jpg");}
+.card18 {background: url("../assets/특산품/합천군_돼지고기.jpg");}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.notShow {
+    cursor: pointer;
+    background: gray;
+}
+
+.notStart {
+    background: lightgray;
+}
+
+.card p {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 64px 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 40%);
+}
